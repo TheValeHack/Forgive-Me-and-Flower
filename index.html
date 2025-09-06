@@ -3,17 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Valentines Day</title>
+  <title>Sarah</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/style.css" />
 
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    
     .hidden {
       display: none;
     }
     .bounce2 {
       animation: bounce2 2s ease infinite;
+    }
+    .title-forgive, #yesButton, #giftButton, #noButton {
+      font-family: 'Poppins', sans-serif;
     }
 
     @keyframes bounce2 {
@@ -39,22 +45,31 @@
   <div id="page-index" class="flex items-center justify-center h-screen z-10">
     <div class="flex flex-col items-center p-4">
       <img id="imageDisplay" src="./images/image1.gif" class="rounded-md h-[300px]" />
-      <h2 id="valentineQuestion" class="text-4xl font-bold italic text-white my-4">
+      <h2 id="valentineQuestion" class="text-4xl font-bold italic text-white my-4 title-forgive">
         Maafin aku ya, sayang?
       </h2>
       <div class="flex gap-4 pt-[20px] items-center" id="responseButtons">
         <button id="yesButton"
-          class="bounce2 inline-flex items-center justify-center rounded-md text-[20px] font-medium hover:bg-green-400 min-h-12 min-w-[75px] px-4 py-2 bg-green-500 text-white transition">
-          Iya
-        </button>
+  class="bounce2 inline-flex items-center justify-center rounded-2xl text-[20px] font-semibold px-6 py-3 
+         bg-gradient-to-r from-green-400 to-green-600 text-white shadow-lg 
+         hover:from-green-500 hover:to-green-700 
+         transition-all duration-300 ease-in-out">
+  Iya
+</button>
         <button id="noButton"
-          class="inline-flex items-center justify-center rounded-md text-[20px] font-medium hover:bg-red-700 h-12 min-w-[75px] px-4 py-2 bg-red-500 text-white">
+          class="inline-flex items-center justify-center rounded-2xl text-[20px] font-semibold px-6 py-3 
+         bg-gradient-to-r from-red-400 to-red-600 text-white shadow-lg 
+         hover:from-red-500 hover:to-red-700 
+         transition-all duration-300 ease-in-out">
           Ngga
         </button>
       </div>
       <div>
         <button id="giftButton" style="display: none;"
-          class="bounce2 rounded-md text-[20px] font-medium hover:bg-green-400 min-h-12 min-w-[75px] px-4 py-2 bg-green-500 text-white transition mt-4">
+          class="bounce2 inline-flex items-center justify-center rounded-2xl text-[20px] font-semibold px-6 py-3 
+         bg-gradient-to-r from-green-400 to-green-600 text-white shadow-lg 
+         hover:scale-110 hover:from-green-500 hover:to-green-700 
+         transition-all duration-300 ease-in-out mt-4">
           Sesuatu buat kamu :3
         </button>
       </div>
